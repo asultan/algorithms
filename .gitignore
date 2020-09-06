@@ -1,5 +1,6 @@
 # Ignore Intellij files
 **/build
+**/out
 **/target
 **/.idea
 **/*.iml

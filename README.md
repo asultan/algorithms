@@ -1,2 +1,2 @@
 # algorithms
-Various problems from hackerrank.com and others
+Various logical problems from hackerrank.com, but not only.

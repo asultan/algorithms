@@ -1,0 +1,17 @@
+PROBLEM
+Implement a stack having the following operations that are performed in O(1) time complexity:
+- pull()
+- push(e)
+- min()
+
+SAMPLE INPUT
+- a stack: [1 5 4 0 3 8]
+
+SAMPLE OPERATIONS AND OUTPUTS
+- min() -> 0
+- pull() -> 8
+- pull() -> 3
+- pull() -> 0
+- min() -> 1
+- push(-1) -> [1 5 4 -1]
+- min() -> -1

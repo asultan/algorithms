@@ -16,21 +16,16 @@ public class Solution {
 
     private static boolean checkParentheses(String s) {
         final Stack<Integer> stack = new Stack();
-        List<Integer> convertedParenthesesList = s.codePoints()
+        List<Integer> parenthesesAsInts = s.codePoints()
                 .mapToObj(p -> (char) p)
                 .map(Solution::convert)
                 .collect(Collectors.toUnmodifiableList());
 
-        for (int p : convertedParenthesesList) {
+        for (int p : parenthesesAsInts) {
             if (p > 0) {
                 stack.push(p);
             } else {
-                if (stack.isEmpty()) {
-                    return false;
-                }
-
-                int pop = stack.pop();
-                if (p + pop != 0) {
+                if (stack.isEmpty() || (p + stack.pop() != 0)) {
                     return false;
                 }
             }

@@ -1,0 +1,23 @@
+PROBLEM
+The valid parentheses problem involves checking that:
+- all the parentheses are matched, i.e., every opening parenthesis has a corresponding closing parenthesis.
+- the matched parentheses are in the correct order, i.e., an opening parenthesis should come before the closing parenthesis.
+
+FUNCTION DESCRIPTION
+Write the checkParentheses function which must return true or false, based on either the parentheses match
+checkParentheses has the following parameter(s):
+- s: the parentheses string
+
+FUNCTION OUTPUT:
+- true / false, based on either the parentheses match
+
+
+SAMPLE INPUT
+- case 1: {{}}()[()]
+- case 2: {][}
+- case 3: ()(
+
+SAMPLE OUTPUT
+- case 1: true
+- case 2: false
+- case 3: false
